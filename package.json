@@ -1,0 +1,19 @@
+{
+  "name": "react-native-bottom-sheet",
+  "version": "0.1.0",
+  "description": "React Native Bottom sheet for android",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bottomsheet",
+    "android"
+  ],
+  "author": "WhatAKitty",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https@github.com:WhatAKitty/react-native-bottom-sheet.git"
+  }
+}
