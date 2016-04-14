@@ -3,6 +3,7 @@ package com.gnet.bottomsheet;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 
 import com.cocosw.bottomsheet.BottomSheet;
 import com.facebook.react.bridge.Callback;
@@ -54,12 +55,19 @@ class RNBottomSheet extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void showShareActionSheetWithOptions(ReadableMap options, Callback failureCallback, Callback successCallback) {
+    public void showShareBottomSheetWithOptions(ReadableMap options, Callback failureCallback, Callback successCallback) {
         String url = options.getString("url");
         String message = options.getString("message");
 
         BottomSheet.Builder builder = new BottomSheet.Builder(this.activity);
-        final Intent shareIntent = new Intent(Intent.ACTION_SEND);
+
+        Uri uri = Uri.parse(url);
+
+        final Intent shareIntent = new Intent();
+        shareIntent.setAction(Intent.ACTION_SEND);
+        shareIntent.putExtra(Intent.EXTRA_STREAM, url);
+        shareIntent.putExtra(Intent.EXTRA_TEXT, message);
+        shareIntent.setType("*/*");
 
         failureCallback.invoke("not support this method");
     }
