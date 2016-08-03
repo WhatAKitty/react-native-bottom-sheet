@@ -15,11 +15,8 @@ import com.facebook.react.bridge.ReadableMap;
 
 class RNBottomSheet extends ReactContextBaseJavaModule {
 
-    Activity activity;
-
-    public RNBottomSheet(ReactApplicationContext reactContext, Activity activity) {
+    public RNBottomSheet(ReactApplicationContext reactContext) {
         super(reactContext);
-        this.activity = activity;
     }
 
     @Override
@@ -32,7 +29,7 @@ class RNBottomSheet extends ReactContextBaseJavaModule {
         ReadableArray optionArray = options.getArray("options");
         final Integer cancelButtonIndex = options.getInt("cancelButtonIndex");
 
-        BottomSheet.Builder builder = new BottomSheet.Builder(this.activity);
+        BottomSheet.Builder builder = new BottomSheet.Builder(this.getCurrentActivity());
 
         // create options
         Integer size = optionArray.size();
@@ -59,7 +56,7 @@ class RNBottomSheet extends ReactContextBaseJavaModule {
         String url = options.getString("url");
         String message = options.getString("message");
 
-        BottomSheet.Builder builder = new BottomSheet.Builder(this.activity);
+        BottomSheet.Builder builder = new BottomSheet.Builder(this.getCurrentActivity());
 
         Uri uri = Uri.parse(url);
 

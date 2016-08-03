@@ -14,18 +14,15 @@ import java.util.List;
 
 public class RNBottomSheetPackage implements ReactPackage {
 
-    Activity activity;
-
-    public RNBottomSheetPackage(Activity activity) {
+    public RNBottomSheetPackage() {
         super();
-        this.activity = activity;
     }
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
 
-        modules.add(new RNBottomSheet(reactContext, activity));
+        modules.add(new RNBottomSheet(reactContext));
 
         return modules;
     }
