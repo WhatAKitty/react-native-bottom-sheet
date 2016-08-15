@@ -77,5 +77,5 @@ import BottomSheet from 'react-native-bottom-sheet';
 
 The same usage with ``` ActionSheetIOS.showActionSheetWithOptions(options: Object, callback: Function) ```
 ```
-BottomSheet.showBotttomSheetWithOptions(options: Object, callback: Function)
+BottomSheet.showBottomSheetWithOptions(options: Object, callback: Function)
 ```
