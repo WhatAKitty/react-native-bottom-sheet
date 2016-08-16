@@ -25,7 +25,7 @@ class RNBottomSheet extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void showBotttomSheetWithOptions(ReadableMap options, final Callback onSelect) {
+    public void showBottomSheetWithOptions(ReadableMap options, final Callback onSelect) {
         ReadableArray optionArray = options.getArray("options");
         final Integer cancelButtonIndex = options.getInt("cancelButtonIndex");
 
