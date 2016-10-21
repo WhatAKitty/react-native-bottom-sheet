@@ -1,6 +1,11 @@
 # react-native-bottom-sheet
 React Native Bottom Sheet module for android
 
+# Demo
+![demo](https://github.com/WhatAKitty/react-native-bottom-sheet/demo.gif, "demo")
+
+[Go to example ->](https://github.com/WhatAKitty/ReactNativeBottomSheetTest)
+
 ## 如何安装(How to install)
 
 ### 首先安装npm包(Install package from npm first)
