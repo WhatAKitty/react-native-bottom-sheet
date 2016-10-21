@@ -2,7 +2,7 @@
 React Native Bottom Sheet module for android
 
 # Demo
-![demo](https://github.com/WhatAKitty/react-native-bottom-sheet/demo.gif, "demo")
+![demo](https://github.com/WhatAKitty/react-native-bottom-sheet/demo.gif "demo")
 
 [Go to example ->](https://github.com/WhatAKitty/ReactNativeBottomSheetTest)
 
