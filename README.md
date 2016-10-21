@@ -54,7 +54,7 @@ package com.myapp;
 protected List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
     new MainReactPackage()
-+   , new RNBottomSheetPackage(this)
++   , new RNBottomSheetPackage()
     );
 }
 
@@ -71,11 +71,7 @@ protected List<ReactPackage> getPackages() {
 
 ```
 import BottomSheet from 'react-native-bottom-sheet';
-```
 
-用法与``` ActionSheetIOS.showActionSheetWithOptions(options: Object, callback: Function) ```类似
-
-The same usage with ``` ActionSheetIOS.showActionSheetWithOptions(options: Object, callback: Function) ```
-```
 BottomSheet.showBottomSheetWithOptions(options: Object, callback: Function)
+BottomSheet.showShareBottomSheetWithOptions(options: Object, failureCallback: Function, successCallback: Function)
 ```
