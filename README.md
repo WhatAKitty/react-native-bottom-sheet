@@ -1,4 +1,17 @@
 # react-native-bottom-sheet
+
+[![Build Status][travis-image]][travis-url]
+[![npm version][npm-image]][npm-url]
+[![NPM downloads][npm-dm-image]][npm-url]
+
+
+[npm-image]: https://badge.fury.io/js/react-native-bottom-sheet.svg
+[npm-dm-image]: http://img.shields.io/npm/dm/react-native-bottom-sheet.svg?style=flat
+[npm-url]: https://npmjs.org/package/react-native-bottom-sheet
+[react-native-url]: https://facebook.github.io/react-native/
+[travis-image]: https://travis-ci.org/WhatAKitty/react-native-bottom-sheet.svg?branch=master
+[travis-url]: https://travis-ci.org/WhatAKitty/react-native-bottom-sheet
+
 React Native Bottom Sheet module for android
 
 # Demo
