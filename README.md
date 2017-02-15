@@ -2,7 +2,7 @@
 
 [![Build Status][travis-image]][travis-url]
 [![npm version][npm-image]][npm-url]
-[![NPM downloads][npm-dm-image]][npm-url]
+[![npm downloads][npm-dm-image]][npm-url]
 
 
 [npm-image]: https://badge.fury.io/js/react-native-bottom-sheet.svg
