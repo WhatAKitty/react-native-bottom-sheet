@@ -1,5 +1,6 @@
 # react-native-bottom-sheet
 
+[![Build Status][travis-image]][travis-url]
 [![npm version][npm-image]][npm-url]
 [![npm downloads][npm-dm-image]][npm-url]
 
