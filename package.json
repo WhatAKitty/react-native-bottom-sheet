@@ -4,7 +4,8 @@
   "description": "React Native Bottom sheet for android",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/.bin/eslint *.js",
+    "test": "npm run lint"
   },
   "keywords": [
     "bottomsheet",
@@ -15,5 +16,17 @@
   "repository": {
     "type": "git",
     "url": "git+https@github.com:WhatAKitty/react-native-bottom-sheet.git"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0"
+  },
+  "peerDependencies": {
+    "react": ">=14.5.0",
+    "react-native": ">=0.29.0"
   }
 }
