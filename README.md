@@ -59,7 +59,7 @@ compile "com.facebook.react:react-native:+"  // From node_modules
 }
 ```
 
-Edit your `MainActivity.java` (deep in `android/app/src/main/java/...`) to look like this (note **two** places to edit):
+Edit your `MainApplication.java` (deep in `android/app/src/main/java/...`) to look like this (note **two** places to edit):
 
 ```diff
 package com.myapp;
