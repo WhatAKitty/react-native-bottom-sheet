@@ -15,6 +15,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.UiThreadUtil;
 
 import org.json.JSONObject;
 
@@ -40,7 +41,7 @@ class RNBottomSheet extends ReactContextBaseJavaModule {
         ReadableArray optionArray = options.getArray("options");
         final Integer cancelButtonIndex = options.getInt("cancelButtonIndex");
 
-        BottomSheet.Builder builder = new BottomSheet.Builder(this.getCurrentActivity());
+        final BottomSheet.Builder builder = new BottomSheet.Builder(this.getCurrentActivity());
 
         // create options
         Integer size = optionArray.size();
@@ -59,7 +60,12 @@ class RNBottomSheet extends ReactContextBaseJavaModule {
             }
         });
 
-        builder.build().show();
+        UiThreadUtil.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                builder.build().show();
+            }
+        });
     }
 
     @ReactMethod
